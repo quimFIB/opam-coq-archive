@@ -32,8 +32,8 @@ install: [
 ]
 
 url {
-  src: "https://gitlab.com/formalv/formalv/-/archive/archive/opam-tests-1.0/formalv-archive-opam-tests-1.0.tar.gz"
-  checksum: "sha256=5f3ee30a7323f2de64659a649916dbfc47a4604ee3cc7beec10af195d182df22"
+  src: "https://gitlab.com/formalv/formalv/-/archive/release-1.0/formalv-release-1.0.tar.gz"
+  checksum: "sha256=fc44e78d272cd7dcedb46967ec40b4291b70322becb7c459e34bbc67d3877260"
 }
 
 # tags: [
