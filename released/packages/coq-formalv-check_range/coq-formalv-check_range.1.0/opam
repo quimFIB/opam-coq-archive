@@ -16,19 +16,22 @@ license: "PolyForm Noncommercial License 1.0.0" # Make sure this is reflected by
 
 depends: [
   "coq" {>= "8.14" & <= "8.15"}
+  "coq-mathcomp-algebra" {>= "1.12" & <= "1.13" }
+  "coq-mathcomp-ssreflect" {>= "1.12" & <= "1.13" }
 ]
 
 build: [
-  [make "-C" "/theories/time" "-j" "%{jobs}%"]
+  # ["cd" "/theories/time"]
+  # ["coq_makefile" "-f" "_CoqProject" "-o" "Makefile"]
+  [make "-C" "theories/check_range" "-j" "%{jobs}%"]
 ]
 install: [
-  [make "-C" "/theories/time" "install"]
+  [make "-C" "theories/check_range" "install"]
 ]
 
 url {
   src: "https://gitlab.com/formalv/formalv/-/archive/archive/opam-tests-1.0/formalv-archive-opam-tests-1.0.tar.gz"
-  checksum: "sha256=75a4d1c8880768c22f36760fbd1c1f850162985354c99d80645b5fdd576ab3f9"
-  # checksum: "sha256=ee27902a3119757c666ce61805f36794f1497a44e3a7f722aea2976124075876"
+  checksum: "sha256=5f3ee30a7323f2de64659a649916dbfc47a4604ee3cc7beec10af195d182df22"
 }
 
 # tags: [
