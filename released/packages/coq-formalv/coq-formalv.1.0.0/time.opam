@@ -1,0 +1,39 @@
+opam-version: "2.0"
+synopsis: "A Coq library for time and date arithmetic according to the UTC standard with leap seconds" # One-line description
+description: """
+TODO: Description
+""" # Longer description, can span several lines
+
+homepage: "https://gitlab.com/formalv/formalv"
+dev-repo: "git+https://gitlab.com/formalv/formalv"
+bug-reports: "https://gitlab.com/formalv/formalv/-/issues"
+doc: "https://formalv.gitlab.io/formalv/coqdoc/toc.html"
+maintainer: "your@email.address"
+authors: [
+  "You"
+]
+license: "PolyForm Noncommercial License 1.0.0" # Make sure this is reflected by a LICENSE file in your sources
+
+depends: [
+  "coq" {>= "8.14" & <= "8.15"}
+]
+
+build: [
+  [make "-C" "/theories/time" "-j" "%{jobs}%"]
+]
+install: [
+  [make "-C" "/theories/time" "install"]
+]
+
+url {
+  src: "https://gitlab.com/formalv/formalv/-/archive/archive/opam-tests-1.0/formalv-archive-opam-tests-1.0.tar.gz"
+  checksum: "sha256=75a4d1c8880768c22f36760fbd1c1f850162985354c99d80645b5fdd576ab3f9"
+  # checksum: "sha256=ee27902a3119757c666ce61805f36794f1497a44e3a7f722aea2976124075876"
+}
+
+# tags: [
+#   "keyword:fooish"
+#   "category:Miscellaneous/Coq Extensions"
+#   "date:2019-07-01"
+#   "logpath:Foo"
+# ]
