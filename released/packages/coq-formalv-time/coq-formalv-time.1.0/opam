@@ -33,7 +33,7 @@ install: [
 
 url {
   src: "https://gitlab.com/formalv/formalv/-/archive/release-1.0/formalv-release-1.0.tar.gz"
-  checksum: "sha256=fc44e78d272cd7dcedb46967ec40b4291b70322becb7c459e34bbc67d3877260"
+  checksum: "sha256=9c6b35e26067005f96c67e094421d078ef6e460a259d76e97177bf9f0be3fef1"
 }
 
 # tags: [
